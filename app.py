@@ -33,11 +33,6 @@ def _noise_sweep():
 
 
 @st.cache_data(show_spinner=False)
-def _momentum_replication():
-    return ev.momentum_replication_check()
-
-
-@st.cache_data(show_spinner=False)
 def _baseline():
     return ev.noise_free_baseline_check()
 
@@ -168,13 +163,6 @@ auf die Rosenbrock-Funktion aus Stück 1–3.
     baseline = _baseline()
     for row in baseline:
         st.caption(f"{row['optimizer']}: Fehler zum Minimum = {row['err']:.2e}")
-
-    st.markdown("**Momentum-Erfolgsquote im Detail** (Hook 1, verfeinert):")
-    mr = _momentum_replication()
-    for row in mr:
-        st.caption(f"σ={row['sigma']:.0f}: SGD {row['sgd_successes']}/{row['n_seeds']}, "
-                  f"Momentum {row['momentum_successes']}/{row['n_seeds']}, "
-                  f"Momentum schlechter: {row['momentum_worse']}")
 
     st.markdown("**Exakte Reduktion:** Momentum mit β=0 reduziert sich algebraisch exakt auf "
                "SGD:")
