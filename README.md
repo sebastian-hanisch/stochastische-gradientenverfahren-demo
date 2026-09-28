@@ -1,6 +1,6 @@
 # Stochastische Gradientenverfahren – Streamlit-Demo
 
-**[→ Demo live ausprobieren](https://sebastianhanisch-stochastische-optimierung-demo.streamlit.app/)**
+**[→ Demo live ausprobieren](https://sebastianhanisch-stochastische-gradientenverfahren-demo.streamlit.app/)**
 
 Stück 8 (LETZTES) der **Nichtlineare-Optimierung-Reihe** der "Konzepte"-Reihe im Portfolio von
 [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning.
