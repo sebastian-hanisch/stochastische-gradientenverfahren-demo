@@ -172,3 +172,7 @@ streamlit run app.py
   Computational Mathematics and Mathematical Physics, 4(5), 1–17.
 - Kingma, D. P. & Ba, J. (2015). *Adam: A Method for Stochastic Optimization.* ICLR 2015.
 - Muon (2024/25, nicht gebaut, siehe oben): *The Newton-Muon Optimizer*, arXiv:2604.01472.
+
+---
+
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Nichtlineare Optimierung: acht Stücke, zwei Äste](https://sebastianhanisch.net/konzepte-nichtlineare-optimierung.html).
