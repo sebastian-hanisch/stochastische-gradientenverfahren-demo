@@ -127,13 +127,15 @@ Regler in der App).
 
 ## Tests
 
-34 Tests, `python -m pytest tests/ -v` (Laufzeit lokal ~40 Sekunden — die Rausch-Sweeps über 30
+38 Tests, `python -m pytest tests/ -v` (Laufzeit lokal ~40 Sekunden — die Rausch-Sweeps über 30
 Seeds × 3000 Iterationen dominieren):
 - `test_functions.py` – Rosenbrock-Funktion/Gradient, Rauschen reproduzierbar mit festem Seed.
 - `test_optimizers.py` – Konvergenz rauschfrei, exakte Momentum-Reduktion, Trajektorien-Länge.
 - `test_evaluation.py`, `test_claims.py` – jede Zahl oben nachgerechnet, plattformrobust (Richtung
   statt exakter Zählwert, siehe `feedback_ci_platform_robust_tests`).
 - `test_presets.py`, `test_app.py` – Presets, Regler-Extremwerte, Footer.
+- `test_oracle_sgd.py` – unabhängige Orakel: vektorisierte Referenzläufe (Momentum in Zwei-Punkt-Form,
+  Adam mit ausgeschriebenen Momenten), `scipy.optimize.rosen`, erster Adam-Schritt.
 
 ## Dateistruktur
 
